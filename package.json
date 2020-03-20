@@ -1,21 +1,24 @@
 {
-  "name": "testcafe-examples",
+  "name": "examples",
   "version": "0.0.1",
   "author": {
-    "name": "Developer Express Inc.",
-    "url": "https://www.devexpress.com/"
+    "name": "ankush saini"
   },
   "description": "This repository contains sample test files that help you learn how to use TestCafe.",
   "license": "MIT",
   "dependencies": {
+    "browserstack": "^1.5.3",
+    "glob-promise": "^3.4.0",
     "lodash": "4.17.15",
-    "nanoid": "^2.1.9",
-    "testcafe": "^1.5.0"
+    "nanoid": "^2.1.9"
   },
   "scripts": {
-    "test": "testcafe chrome,firefox examples -a \"node server/index.js\""
+    "test": "testcafe chrome,firefox examples -a \"node server/index.js\"",
+    "test:e2e": "BROWSERSTACK_USERNAME=\"ankushsaini3\" BROWSERSTACK_ACCESS_KEY=\"XCzNxj5Ffx6srdvifo5Q\" testcafe browserstack:Chrome@53.0:Windows 10 examples/sapientPortal/index.js"
   },
   "devDependencies": {
-    "mockdate": "^2.0.5"
+    "mockdate": "^2.0.5",
+    "testcafe": "^1.8.3",
+    "testcafe-browser-provider-browserstack": "^1.12.0"
   }
 }
