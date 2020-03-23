@@ -26,7 +26,7 @@ test('Screenshot test', async t => {
 	await t
 		.click(loginSelector)
 		.typeText(loginInput, 'anksaini1')
-		.typeText(passwordInput, '******')
+		.typeText(passwordInput, 'Hsukna@1959')
 		.click(submitButton)
 		.takeScreenshot(testScreenshotPath + imgName);
 
