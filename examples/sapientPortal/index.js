@@ -1,7 +1,7 @@
 import { Selector } from 'testcafe';
 
 fixture `Data-Driven Tests`
-    .page `https://peopleportal2.sapient.com/`;
+    .page `https://www.xyz.com/`;
 
 test('login into people portal and update emergency detail', async t => {
     const loginSelector = Selector('.idp').nth(0);
@@ -16,8 +16,8 @@ test('login into people portal and update emergency detail', async t => {
 
     await t
     .click(loginSelector)
-    .typeText(loginInput, 'anksaini1')
-    .typeText(passwordInput, 'Hsukna@1959')
+    .typeText(loginInput, 'ank***')
+    .typeText(passwordInput, '*******')
     .click(submitButton)
     .click(emergenyContactDropDown)
     .click(emergenyContactOption.withText('Naresh Saini'))

@@ -3,7 +3,7 @@ import compareScreenshots from '../../server/compare-screenshots'
 import { UAParser } from 'ua-parser-js'
 
 fixture `compare screens`
-  .page `https://peopleportal2.sapient.com/`;
+  .page `https://www.xyz.com/`;
 
 const screenshotPath = "./examples/compare-screens/screenshots/",
 modelPath = "models/";
@@ -25,7 +25,7 @@ test('Screenshot test', async t => {
 
 	await t
 		.click(loginSelector)
-		.typeText(loginInput, 'anksaini1')
+		.typeText(loginInput, 'ank***')
 		.typeText(passwordInput, '*****')
 		.click(submitButton)
 		.takeScreenshot(testScreenshotPath + imgName);
