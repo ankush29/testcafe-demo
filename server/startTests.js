@@ -27,8 +27,8 @@ const SUPPORTED_BROWSERS = [
 ];
 
 const browserStackCredentials = {
-  username: 'ankushsaini3',
-  password: 'XCzNxj5Ffx6srdvifo5Q'
+  username: 'ank*******',
+  password: '*************'
 };
 
 async function getFiles(globPattern) {
