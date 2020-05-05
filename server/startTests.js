@@ -69,7 +69,7 @@ async function getRunningBrowserstackSessions() {
 
 async function startTests(browsers, createTestCafeInstance) {
   // The testcafe node api does not accept glob patterns, so grab relevant test files using node-glob
-  let files = await getFiles("../examples/sapientPortal");
+  let files = await getFiles("../examples/xyzPortal");
   // Check that there are no tests already running
   let sessionInfo = await getRunningBrowserstackSessions();
   if (sessionInfo.running_sessions !== 0) {

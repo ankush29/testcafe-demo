@@ -3,7 +3,7 @@ import { Selector } from 'testcafe';
 fixture `Data-Driven Tests`
     .page `https://www.xyz.com/`;
 
-test('login into people portal and update emergency detail', async t => {
+test('login into xyz portal and update emergency detail', async t => {
     const loginSelector = Selector('.idp').nth(0);
     const loginInput = Selector('#userNameArea');
     const passwordInput = Selector('#passwordArea');
@@ -20,7 +20,7 @@ test('login into people portal and update emergency detail', async t => {
     .typeText(passwordInput, '*******')
     .click(submitButton)
     .click(emergenyContactDropDown)
-    .click(emergenyContactOption.withText('Naresh Saini'))
+    .click(emergenyContactOption.withText('Na*****'))
     .expect(saveButton.visible).ok()
     .click(saveButton)
     .expect(dialog.textContent).contains('Contact saved successfully.');

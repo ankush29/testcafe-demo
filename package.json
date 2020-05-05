@@ -18,7 +18,7 @@
   },
   "scripts": {
     "test": "testcafe chrome,firefox examples -a \"node server/index.js\"",
-    "test:e2e": "BROWSERSTACK_USERNAME=\"ankushsaini3\" BROWSERSTACK_ACCESS_KEY=\"XCzNxj5Ffx6srdvifo5Q\" testcafe browserstack:Chrome@53.0:Windows 10 examples/sapientPortal/index.js"
+    "test:e2e": "BROWSERSTACK_USERNAME=\"ankushsaini3\" BROWSERSTACK_ACCESS_KEY=\"XCzNxj5Ffx6srdvifo5Q\" testcafe browserstack:Chrome@53.0:Windows 10 examples/xyzPortal/index.js"
   },
   "devDependencies": {
     "mockdate": "^2.0.5",
